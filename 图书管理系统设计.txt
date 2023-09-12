@@ -1,0 +1,28 @@
+类：服务器（数据库操作）CLibraryServer、客户端（借书、还书）CLibraryClient
+
+
+数据库：
+LibraryManagementSystem
+           |____________ UserInfo
+           |               |_____ Username（唯一）
+           |               |_____ Password
+           |           
+	   |____________ Library
+           |               |_____ BookName
+           |               |_____ ISBN（唯一）
+           |
+           |____________ BorrowingRecord
+                           |_____ BorrowerName
+                           |_____ BookName
+                           |_____ ISBN
+
+客户端：
+注册:用户名、密码、确认密码、确定、取消
+登录：用户名、密码、注册、登录、注销
+注销：（有/无）未还书（可以/不可以）注销
+借书：图书列表、书名、确定、确认借书
+还书：还书列表、书名、确定、确认还书
+
+服务器：
+借书操作
+还书操作
